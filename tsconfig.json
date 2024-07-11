@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es5",
+    "jsx": "react",
+    "sourceMap": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "types": ["redux"],
+    "lib": ["es2015", "dom"],
+    "resolveJsonModule": true, // Enable this option
+  },
+  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"],
+  "include": ["src", "index.d.ts"]
+}

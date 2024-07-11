@@ -1,0 +1,128 @@
+$men-color: #38B2AC;
+$men-bg-color: #D7F5F3;
+
+$women-color: #553C9A;
+$women-bg-color: #E9E0FF;
+
+$youth-color: #3182CE;
+$youth-bg-color: #CCE6FF;
+
+$tag-radius: 6px;
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.block-container {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    width: 400px;
+    margin: 4px;
+    .block-title {
+        font-weight: bold;
+
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 10px;
+
+        h5 {
+            font-size: 25px;
+            margin: 0;
+        }
+
+        span {
+            margin-left: 10px;
+            color: grey;
+            margin-top: 3px; // Considering the line height, matching vertical alignment
+        }
+    }
+
+    .block-content {
+        border-radius: $tag-radius;
+        border: 1px solid #e7e7e7;
+        padding: 20px 20px;
+
+        p {
+            font-weight: bold;
+            margin: 0 0 10px;
+        }
+    }
+}
+
+.country-tag-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+}
+
+.country-tag {
+    background-color: $men-bg-color;
+
+    display: flex;
+    align-items: center;
+
+    padding: 8px;
+    border-radius: $tag-radius;
+    margin: 4px;
+    .country-tag-pop {
+        color: white;
+        background-color: $men-color;
+        border-radius: $tag-radius;
+
+        padding: 6px 14px;
+    }
+
+    .country-tag-cname {
+        color: $men-color;
+        margin-left: 8px
+    }
+}
+
+.category-men {
+    background-color: $men-bg-color;
+
+    .country-tag-pop {
+        background-color: $men-color;
+    }
+    .country-tag-cname {
+        color: $men-color;
+    }
+}
+
+.category-women {
+    background-color: $women-bg-color;
+
+    .country-tag-pop {
+        background-color: $women-color;
+    }
+    .country-tag-cname {
+        color: $women-color;
+    }
+}
+
+.category-youth {
+    background-color: $youth-bg-color;
+
+    .country-tag-pop {
+        background-color: $youth-color;
+    }
+    .country-tag-cname {
+        color: $youth-color;
+    }
+}

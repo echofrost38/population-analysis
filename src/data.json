@@ -1,0 +1,28 @@
+{
+  "countries": [
+    {
+      "name": "Australia",
+      "men": 12.84,
+      "women": 12.94,
+      "youth": 5.71
+    },
+    {
+      "name": "Ghana",
+      "men": 16.46,
+      "women": 16.38,
+      "youth": 14.62
+    },
+    {
+      "name": "Indonesia",
+      "men": 139.13,
+      "women": 137.23,
+      "youth": 82.96
+    },
+    {
+      "name": "Kenya",
+      "men": 27.32,
+      "women": 27.66,
+      "youth": 24.42
+    }
+  ]
+}
